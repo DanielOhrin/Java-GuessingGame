@@ -4,14 +4,9 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Game {
-	private Random random;
-	private int answer;
-	final static private int guessSeed = 5;
-	
-	public Game() {
-		random = new Random();
-		answer = random.nextInt(101);
-	}
+	private Random random = new Random();
+	private int answer = random.nextInt(101);
+	final static private int MAX_GUESSES = 5;
 
 	public static void clearConsole() {
 		for (int i = 0; i < 101; i++) {
@@ -24,7 +19,7 @@ public class Game {
 		
 		// [1] = Win/Lose   [2] = answer   [3] = scanner error
 		int[] result = new int[] { -1, answer, 0 };
-		int guesses = guessSeed;
+		int guesses = MAX_GUESSES;
 		Integer guess = null;
 		
 		// Scans terminal for input
@@ -44,7 +39,7 @@ public class Game {
 			
 			if (guesses == 1) {
 				System.out.print("Final Guess: ");
-			} else if (guesses == guessSeed) {
+			} else if (guesses == MAX_GUESSES) {
 				System.out.println("Guessing Game | You have 5 guesses left.");
 				System.out.println("Welcome! I am thinking of a whole number between 1-100!");
 				System.out.println();
