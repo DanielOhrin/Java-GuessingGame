@@ -1,0 +1,29 @@
+# Eclipse project files
+.classpath
+.project
+.settings/
+
+# Eclipse workspace files
+.metadata
+
+# Eclipse Launch Configurations
+*.launch
+
+# Eclipse derived files
+bin/
+
+# Eclipse working directories
+tmp/
+.tmp/
+
+# Eclipse Terminal
+.vtm
+
+# Eclipse output files
+*.log
+
+# Eclipse class files
+*.class
+
+# Eclipse backup files
+*~
