@@ -7,7 +7,11 @@ public class Main {
 		
 		Game guessingGame = new Game();
 		
+		guessingGame.chooseDifficulty();
 		final int[] RESULT = guessingGame.run();
+		
+		// Close the scanner before moving on
+		guessingGame.closeScanner();
 		
 		if (RESULT[2] == 1) {
 			System.out.println("An Error occured with the scanner. Restart the application.");
