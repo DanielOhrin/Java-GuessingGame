@@ -40,8 +40,7 @@ public class Main {
 			Game.clearConsole();
 			System.out.println(gameOverMsg.toString());
 
-			// Always want this to run once, because the default value will be some form of
-			// "Y"
+			// Always want this to run once, because the default value will be some form of "Y"
 			do {
 				try {
 					isPlaying = scanner.next();
